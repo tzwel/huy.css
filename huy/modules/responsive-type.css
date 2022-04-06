@@ -1,0 +1,13 @@
+html {
+    font-size: calc(.4rem + 0.2vw);
+}
+
+body {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+	html {
+		font-size: calc(.37rem + 0.5vw);
+	}
+}

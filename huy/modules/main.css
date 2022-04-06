@@ -1,0 +1,27 @@
+*, * * {
+	margin: 0;
+	padding: 0;
+	position: relative;
+    -webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	max-width: 100%;
+	line-height: 1.3;
+}
+
+html, body {
+	color: var(--color);
+	background: var(--background);
+	margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	overflow-y: auto;
+	font-size: 1em;
+}
+
+/* A fix for Electron */
+head, script {
+    display: none !important;
+}
