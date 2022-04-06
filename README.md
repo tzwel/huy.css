@@ -1,2 +1,2 @@
 # huy.css
-A css boilerplate
+A minimal css boilerplate
