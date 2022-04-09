@@ -4,7 +4,7 @@
 */
 
 @import url(./modules/variables.css);
-@import url(./modules/main.css);
+@import url(./modules/base.css);
 @import url(./modules/responsive-type.css);
 @import url(./modules/webapp.css);
 @import url(./modules/tags.css);
