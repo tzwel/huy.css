@@ -2,5 +2,8 @@
 	--accent: rgb(145, 84, 202);
 	--color: rgba(219, 219, 219, 0.883);
 	--background: #1f1f22;
+	--focus: rgb(73, 251, 73);
     --padding: 1rem;
+	--owl: 1rem;
+	--font-scaling: (0em);
 }

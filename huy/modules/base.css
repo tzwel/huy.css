@@ -8,6 +8,15 @@
 	line-height: 1.3;
 }
 
+*:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--focus);
+}
+
+/* lobotomized owl selector */
+* + * {
+	margin-top: var(--owl);
+}	
+
 html, body {
 	color: var(--color);
 	background: var(--background);
@@ -18,7 +27,7 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	overflow-y: auto;
-	font-size: 1em;
+    font-size: calc(1em + var(--font-scaling))
 }
 
 /* A fix for Electron */
