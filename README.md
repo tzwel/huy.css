@@ -1,5 +1,5 @@
 # huy.css
-A minimal css boilerplate
+huy.css is a barebones css boilerplate letting you quickly jumpstart your projects
 
 ## Usage
 From a CDN
