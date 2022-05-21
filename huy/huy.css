@@ -7,7 +7,7 @@
 
 /* Import what you want - but be careful
    huy.css needs:
-   - variables.css
+   - config.css
    - base.css
    - tags.css (can be omitted if you REALLY need to)
    to function correctly.
@@ -15,9 +15,9 @@
    Also you should remember that the order of imports is important
    and shouldn't be changed */
 
-@import url(./modules/variables.css);       /* Configure your project here */
+@import url(config.css);       /* Configure your project here */
 @import url(./modules/base.css);            /* Base styles, basically the skeleton of your project */
 @import url(./modules/responsive-type.css); /* An optional module that scales the font according to the current screen size */
-@import url(./modules/webapp.css);          /* An optional module recommended to use when building apps with native feel */
+@import url(./modules/webapp.css);          /* An optional module recommended to use when building apps that need that native feel */
 @import url(./modules/tags.css);            /* An important module styling most of your project. This makes huy.css look the way it looks */
 @import url(./modules/attributes.css);      /* An optional utility module letting you use attributes in your html code that will style an element they are used on */

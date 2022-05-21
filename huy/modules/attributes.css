@@ -57,3 +57,13 @@
 [max-w-800],[max-width-800] {
     max-width: 800px;
 }
+
+[disabled] {
+    opacity: .65;
+    user-select: none;
+    pointer-events: none;
+}
+
+[overflow] {
+    overflow: visible;
+}
