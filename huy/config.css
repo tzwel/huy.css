@@ -4,6 +4,7 @@
 	--accent-transparent: rgba(243, 91, 192, 0.5);
 	--color: rgb(219, 219, 219);
 	--background: #1d1d1d;
+	--dim-color: rgba(130, 130, 130, 0.2);
 
 	/* Rounded edges for common elements */
 	--border-radius: 4px;

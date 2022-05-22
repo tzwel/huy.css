@@ -1,7 +1,9 @@
 # huy.css
 huy.css is a barebones css boilerplate letting you quickly jumpstart your projects
 
-huy.css contains a minimal number of utilities so you don't have to write the same code over and over
+It offers minimal styling to adapt to a wide variety of projects, meaning you will have to set most of the margins or paddings by yourself
+
+Although, huy.css contains many useful utility properties such as `padding` that set the padding according to the value specified in the config
 
 # Usage
 

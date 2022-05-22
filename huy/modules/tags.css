@@ -171,6 +171,27 @@ form, fieldset {
     border: 0;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse 
+}
+
+table th {
+    padding: 4px;
+    border: 1px solid var(--dim-color);
+    border: 0;
+    margin: 0;
+    text-align: inherit;
+}
+
+tr {
+    border-bottom: 1px solid var(--dim-color);
+}
+
+table td {
+    padding: 4px;
+}
+
 mark {
     background-color: var(--accent-transparent);
     color: var(--color);
@@ -183,7 +204,7 @@ pre {
 }
 
 hr {
-    border-color: rgba(130, 130, 130, 0.2);
+    border-color: var(--dim-color);
     outline: 0;
     border-style: solid;
     border-width: 2px;
