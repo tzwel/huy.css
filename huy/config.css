@@ -2,8 +2,8 @@
 	/* Global colors used through the whole project */
 	--accent: rgb(243, 91, 192);
 	--accent-transparent: rgba(243, 91, 192, 0.5);
-	--color: rgba(219, 219, 219, 0.88);
-	--background: #1f1f22;
+	--color: rgb(219, 219, 219);
+	--background: #1d1d1d;
 
 	/* Rounded edges for common elements */
 	--border-radius: 4px;
@@ -12,11 +12,11 @@
 	--focus: rgb(73, 251, 73);
 
 	/* Global padding */
-    --padding: 1rem;
+    --padding: 2rem;
 
 	/* Lobotomized owl selector for margins between elements,
 	   defaults to 0 since it creates problems with flexbox-based responsive desings	*/
-	--owl: 1rem;
+	--owl: 2.5rem;
 
 	/* Addition (or substraction) to the global font size. 
 	   Can be assigned negative values, although it's not recommended since

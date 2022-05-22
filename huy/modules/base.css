@@ -2,10 +2,11 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
-        -webkit-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
 	box-sizing: inherit;
 	max-width: 100%;
-	line-height: 1.3;
+	line-height: 1.5;
+	word-wrap: break-word;
 }
 
 *:focus-visible {
@@ -27,11 +28,12 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	overflow-y: auto;
-    font-size: calc(1em + var(--font-scaling));
-	display: flex;
-	flex-direction: column;
+	font-size: calc(1.2rem + var(--font-scaling));
+	display: block;
 	width: 100%;
 	height: 100%;
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+	text-rendering: geometricPrecision;
 }
 
 /* A fix for Electron */

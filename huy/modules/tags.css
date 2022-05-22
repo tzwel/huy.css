@@ -22,7 +22,7 @@ h6 {
     font-size: calc(1em + var(--font-scaling))
 }
 
-button, a[role="button"] {
+button, a[role="button"], input[type="button"], input[type="reset"], input[type="submit"] {
     text-decoration: none;
     color: var(--accent);
     background-color: var(--background);
@@ -39,18 +39,18 @@ button, a[role="button"] {
     border-radius: var(--border-radius);
     transition: background-color .2s, color .15s, box-shadow .15s;
     padding: .8rem 2.2rem;
-    font-size: 1.8rem;
+    font-size: inherit;
     border: 1px solid var(--accent);
     box-shadow: 0px 0px 0px 0px transparent;
     font-family: inherit;
 }
 
-button:hover, a[role="button"]:hover {
+button:hover, a[role="button"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
     color: var(--background);
     background-color: var(--accent);
 }
 
-button:focus, a[role="button"]:focus {
+button:focus, a[role="button"]:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
     box-shadow: 0px 0px 0px 4px var(--accent-transparent);
 }
 
@@ -68,6 +68,7 @@ a {
 }
 
 input {
+    font-size: inherit;
     max-width: 100%;
     outline: 0;
     border: 0;
@@ -78,6 +79,15 @@ input {
     background: rgba(127, 127, 127, 0.15);
     transition: box-shadow .15s;
     box-shadow: 0px 0px 0px 0px transparent;
+}
+
+input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent);
+    background: transparent;
+    min-width: 40px;
+    min-height: 30px;
+    padding: .8rem 1.2rem;
 }
 
 input:focus:not([type="checkbox"]) {
@@ -100,6 +110,8 @@ input[type="checkbox"] {
     border-radius: var(--border-radius);
     transition: box-shadow .15s;
     cursor: pointer;
+    min-width: 0;
+    min-height: 0;
 }  
 
 input[type="checkbox"]::after {
@@ -128,6 +140,7 @@ input[type="checkbox"]:focus {
 }
 
 input[type="radio"] {
+    padding: 0;
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
@@ -140,11 +153,41 @@ input[type="radio"] {
   background: transparent;
   transition: background .2s, box-shadow .15s;
   cursor: pointer;
+  min-width: 0;
+  min-height: 0;
+  max-height: 1em;
+  max-width: 1em;
 } 
 
 input[type="radio"]:checked {
     background: var(--accent);
 }  
+
+label {
+    display: block;
+}
+
+form, fieldset {
+    border: 0;
+}
+
+mark {
+    background-color: var(--accent-transparent);
+    color: var(--color);
+}
+
+pre {
+    max-width: 100%;
+    word-wrap:normal;
+    white-space: pre-wrap;
+}
+
+hr {
+    border-color: rgba(130, 130, 130, 0.2);
+    outline: 0;
+    border-style: solid;
+    border-width: 2px;
+}
 
 footer {
     width: 100%;
