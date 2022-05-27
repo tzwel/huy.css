@@ -22,4 +22,4 @@ You would probably want to change some defaults for huy.css to better suite your
 Head to config.css located in the /huy/ directory to get started. The file is well documented so you won't be confused what option does what
 
 ## Learn
-Take a look at how things are done in the `index.html`
+Take a look at how things are done in the `index.html` or go [here](https://tzwel.github.io/huy.css/) for a live demo
