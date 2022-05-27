@@ -4,32 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> huy.css kitchen sink </title>
+    <title> huy.css </title>
     <link rel="stylesheet" href="huy/huy.css">
+
+    <style>
+        input[type="checkbox"],input[type="radio"] {
+            margin-right: 1rem;
+        }
+        input[type="radio"]:not(:first-child) {
+            margin-left: 1rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        code > pre {
+            background-color: rgba(212, 212, 212, 0.2);
+        }
+        li code {
+            width: unset
+        }
+    </style>
 </head>
-<body>
-    <main max-w-800 padded overflow>
+<body padding>
 
+    <main max-w-800 center-self owl>
         <h1> huy.css </h1>
-        <p> huy.css is a barebones css boilerplate letting you quickly jumpstart your projects </p>
+    
+        <p>
+            The kitchen sink
+        </p>
 
-        <h2> A heading </h2>
-        <h3> A heading </h3>
-        <h4> A heading </h4>
-        <h5> A heading </h5>
-        <h6> A heading </h6>
+        <hr>
 
-        <p> Some cool text </p>
-
-        <input type="checkbox">
-        <input type="radio">
+        <h2> Native HTML tags </h2>
 
         <button> A button </button>
+        <input type="text" placeholder="Write stuff here">
 
-        <input placeholder="Text input" type="text">
+        <label flex-align-center for="chk">
+            <input type="checkbox" id="chk"> A checkbox input
+        </label>
 
-        <a href="#"> A link </a>
+        <div flex flex-align-center>
+            <input type="radio" id="contactChoice2"
+            name="contact" value="phone">
+           <label for="contactChoice2">Phone</label>
+       
+           <input type="radio" id="contactChoice3"
+            name="contact" value="mail">
+           <label for="contactChoice3">Mail</label>
+        </div>
+
+        <p> I need some text here to show the <mark> &lt;mark&gt;</mark> tag properly</p>
+
+        
+        <p>
+            The table below is wrapped in <pre noowl>&lt;div overflow&gt; ... &lt;/div&gt;</pre> to be scrollable on mobile devices
+        </p>
+
+        <div overflow>
+            <table>
+                <caption>The Three Most Popular JavaScript Libraries</caption>
+                <thead>
+                  <tr>
+                    <th>Library</th>
+                    <th>jQuery</th>
+                    <th>Bootstrap</th>
+                    <th>Modernizr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Market Share</td>
+                    <td>96.1%</td>
+                    <td>17.0%</td>
+                    <td>14.3%</td>
+                  </tr> 
+                  <tr>
+                    <td>Absolute Usage</td>
+                    <td>70.4%</td>
+                    <td>12.4%</td>
+                    <td>10.5%</td>
+                  </tr>
+                </tbody> 
+            </table>
+        </div>
+
+        A <a href="#!"> link!</a>
+
+        <h2> All the custom css used on this site </h2>
+        <code>
+            <pre padding>
+input[type="checkbox"],input[type="radio"] {
+    margin-right: 1rem;
+}
+input[type="radio"]:not(:first-child) {
+    margin-left: 1rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+code > pre {
+    background-color: rgba(212, 212, 212, 0.2);
+}
+li code {
+    width: unset
+}</pre>
+        </code>
+
+        <h2> Attributes </h2>
+
+        <h3> Usage: </h3>
+
+        <code> &lt;element attribute&gt; ...  &lt;/element&gt;</code>
+
+        <ul>
+            <li>
+                <code>owl</code> - adds margin-top to children as specified in the config.css
+            </li>
+            <li>
+                <code>noowl</code> - removes margin-top from a specific element as specified in the config.css
+            </li>
+            <li> 
+                <code>padding</code>, <code>padded</code> - sets padding defined in the config.css
+            </li>
+            <li> 
+                <code>block</code> - sets display to block
+            </li>
+            <li> 
+                <code>inline-block</code> - sets display to inline-block
+            </li>
+            <li>
+                <code>absolute</code> - sets position to absolute
+            </li>
+            <li>
+                <code>flex</code> - sets position to flex
+            </li>
+        </ul>
+
+        <p>
+            More will be documented soon, you can find all in attributes.css
+        </p>
+
+
 
     </main>
+
 </body>
 </html>

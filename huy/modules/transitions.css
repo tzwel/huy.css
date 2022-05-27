@@ -1,0 +1,11 @@
+button, a[role="button"], input[type="button"], input[type="reset"], input[type="submit"] {
+    transition: background-color .2s, color .15s, box-shadow .15s;
+}
+
+input, input[type="checkbox"] {
+    transition: box-shadow .15s;
+}
+
+input[type="radio"] {
+  transition: background .2s, box-shadow .15s;
+} 

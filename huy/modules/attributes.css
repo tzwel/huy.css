@@ -72,3 +72,11 @@
 [overflow] {
     overflow: auto;
 }
+
+[owl] > * + * {
+	margin-top: var(--owl);
+}
+
+[noowl] {
+	margin-top: calc(0 - var(--owl));
+}

@@ -14,7 +14,7 @@
 }
 
 /* lobotomized owl selector */
-* + * {
+body > * + * {
 	margin-top: var(--owl);
 }	
 

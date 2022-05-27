@@ -9,6 +9,7 @@
    huy.css needs:
    - config.css
    - base.css
+   - transitions.css
    - tags.css (can be omitted if you REALLY need to)
    to function correctly.
 
@@ -20,4 +21,5 @@
 @import url(./modules/responsive-type.css); /* An optional module that scales the font according to the current screen size */
 /*@import url(./modules/webapp.css);*/          /* An optional module recommended to use when building apps that need that native feel, disabled on default. */
 @import url(./modules/tags.css);            /* An important module styling most of your project. This makes huy.css look the way it looks */
+@import url(./modules/transitions.css);            /* A module that adds pretty transitions to elements  */
 @import url(./modules/attributes.css);      /* An optional utility module letting you use attributes in your html code that will style an element they are used on */

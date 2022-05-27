@@ -1,9 +1,9 @@
 :root {
 	/* Global colors used through the whole project */
-	--accent: rgb(243, 91, 192);
+	--accent: rgb(211, 68, 163);
 	--accent-transparent: rgba(243, 91, 192, 0.5);
-	--color: rgb(219, 219, 219);
-	--background: #1d1d1d;
+	--color: rgb(32, 32, 32);
+	--background: #ffffff;
 	--dim-color: rgba(130, 130, 130, 0.2);
 
 	/* Rounded edges for common elements */
@@ -16,7 +16,9 @@
     --padding: 2rem;
 
 	/* Lobotomized owl selector for margins between elements,
-	   defaults to 0 since it creates problems with flexbox-based responsive desings	*/
+	   defaults to 0 since it creates problems with flexbox-based responsive desings
+	   Applies only to the <body> tag, can be added to any other element by using the 'owl' attribute
+	*/
 	--owl: 2.5rem;
 
 	/* Addition (or substraction) to the global font size. 
@@ -24,6 +26,6 @@
 	   it can make fonts-size-s below 0, thus making them invisible 
 	   
 	   The default -.2em is safe enough
-	   */
+	*/
 	--font-scaling: (-.2em);
 }
