@@ -1,3 +1,5 @@
+<img src="banner.jpg" width="100%" height="auto" />
+
 # huy.css
 huy.css is a barebones css boilerplate letting you quickly jumpstart your projects
 
