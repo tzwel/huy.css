@@ -80,3 +80,35 @@
 [noowl] {
 	margin-top: calc(0 - var(--owl));
 }
+
+[bottom-left] {
+    right: unset;
+    top: unset;
+
+    bottom: 0;
+    left: 0;
+}
+
+[bottom-right] {
+    left: unset;
+    top: unset;
+
+    bottom: 0;
+    right: 0;
+}
+
+[top-left] {
+    right: unset;
+    bottom: unset;
+
+    top: 0;
+    left: 0;
+}
+
+[top-right] {
+    left: unset;
+    bottom: unset;
+
+    top: 0;
+    right: 0;
+}

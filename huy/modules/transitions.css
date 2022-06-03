@@ -2,10 +2,14 @@ button, a[role="button"], input[type="button"], input[type="reset"], input[type=
     transition: background-color .2s, color .15s, box-shadow .15s;
 }
 
-input, input[type="checkbox"] {
+input {
     transition: box-shadow .15s;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"], input[type="checkbox"]::after {
   transition: background .2s, box-shadow .15s;
 } 
+
+toast {
+  transition: height .15s, padding .15s, margin .15s;
+}

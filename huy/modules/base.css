@@ -27,7 +27,6 @@ html, body {
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	overflow-y: auto;
 	font-size: calc(1.2rem + var(--font-scaling));
 	display: block;
 	width: 100%;

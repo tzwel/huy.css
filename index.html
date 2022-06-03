@@ -24,6 +24,7 @@
             width: unset
         }
     </style>
+
 </head>
 <body padding>
 
@@ -38,7 +39,7 @@
 
         <h2> Native HTML tags </h2>
 
-        <button> A button </button>
+        <button> A button (click) </button>
         <input type="text" placeholder="Write stuff here">
 
         <label flex-align-center for="chk">
@@ -91,6 +92,9 @@
         </div>
 
         A <a href="#!"> link!</a>
+
+        <toasts>        
+        </toasts>
 
         <h2> All the custom css used on this site </h2>
         <code>
@@ -149,6 +153,29 @@ li code {
 
 
     </main>
+
+
+    <script>
+        const toasts = document.querySelector("toasts")
+        document.querySelector("button").addEventListener("click", async()=> {
+            const id = Math.floor(Math.random() * 12048)
+
+            toasts.insertAdjacentHTML("afterbegin", `
+                <toast id='${id}'> 
+                    <toast-head> A cool toast 😎 </toast-head>
+                    <toast-body> Wow! What a cool toast! </toast-body>
+                </toast>
+            `)
+
+            const thisToast = document.querySelector(`[id="${id}"]`);
+
+
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            thisToast.setAttribute("closed", "");
+            await new Promise(resolve => setTimeout(resolve, 500));
+            thisToast.remove();
+        })
+    </script>
 
 </body>
 </html>

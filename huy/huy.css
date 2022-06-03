@@ -20,6 +20,7 @@
 @import url(./modules/base.css);            /* Base styles, basically the skeleton of your project */
 @import url(./modules/responsive-type.css); /* An optional module that scales the font according to the current screen size */
 /*@import url(./modules/webapp.css);*/          /* An optional module recommended to use when building apps that need that native feel, disabled on default. */
-@import url(./modules/tags.css);            /* An important module styling most of your project. This makes huy.css look the way it looks */
+@import url(./modules/native-tags.css);            /* An important module that styles most of your project. This makes huy.css look the way it looks */
+@import url(./modules/custom-tags.css);            /* An optional module that styles all of the custom tags huy.css provides */
 @import url(./modules/transitions.css);            /* A module that adds pretty transitions to elements  */
 @import url(./modules/attributes.css);      /* An optional utility module letting you use attributes in your html code that will style an element they are used on */
